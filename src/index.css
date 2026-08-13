@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap");
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-light: #eef2ff;
+  --primary-dark: #3730a3;
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-secondary: #f1f5f9;
+  --surface-hover: #f8fafc;
+
+  --foreground: #172033;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --text-white: #ffffff;
+
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --border-primary: #c7d2fe;
+
+  --success: #16a34a;
+  --success-light: #dcfce7;
+  --success-dark: #166534;
+
+  --danger: #dc2626;
+  --danger-light: #fee2e2;
+  --danger-dark: #991b1b;
+
+  --warning: #d97706;
+  --warning-light: #fef3c7;
+  --warning-dark: #92400e;
+
+  --info: #0284c7;
+  --info-light: #e0f2fe;
+  --info-dark: #075985;
+
+  --price: #4f46e5;
+  --price-old: #94a3b8;
+  --discount: #dc2626;
+  --rating: #f59e0b;
+
+  --input-background: #ffffff;
+  --input-border: #cbd5e1;
+  --input-focus: #4f46e5;
+  --placeholder: #94a3b8;
+
+  --navbar-background: #ffffff;
+  --navbar-text: #172033;
+  --navbar-text-muted: #64748b;
+  --navbar-border: #e2e8f0;
+
+  --footer-background: #111827;
+  --footer-text: #e2e8f0;
+  --footer-muted: #94a3b8;
+
+  --overlay: rgba(15, 23, 42, 0.55);
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.12);
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+}
+
+.dark {
+  --primary: #818cf8;
+  --primary-hover: #6366f1;
+  --primary-light: #1e1b4b;
+  --primary-dark: #a5b4fc;
+
+  --background: #0b1120;
+  --surface: #111827;
+  --surface-secondary: #172033;
+  --surface-hover: #1e293b;
+
+  --foreground: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  --border: #334155;
+  --border-light: #1e293b;
+  --border-primary: #3730a3;
+
+  --success: #4ade80;
+  --success-light: #14532d;
+  --success-dark: #86efac;
+
+  --danger: #f87171;
+  --danger-light: #450a0a;
+  --danger-dark: #fca5a5;
+
+  --warning: #fbbf24;
+  --warning-light: #451a03;
+  --warning-dark: #fde68a;
+
+  --info: #38bdf8;
+  --info-light: #082f49;
+  --info-dark: #7dd3fc;
+
+  --price: #a5b4fc;
+  --price-old: #64748b;
+  --discount: #f87171;
+  --rating: #fbbf24;
+
+  --input-background: #111827;
+  --input-border: #475569;
+  --input-focus: #818cf8;
+  --placeholder: #64748b;
+
+  --navbar-background: #111827;
+  --navbar-text: #e2e8f0;
+  --navbar-text-muted: #94a3b8;
+  --navbar-border: #334155;
+
+  --footer-background: #070b14;
+  --footer-text: #e2e8f0;
+  --footer-muted: #94a3b8;
+
+  --overlay: rgba(0, 0, 0, 0.7);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Cairo", "Tajawal", sans-serif;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.form-control::placeholder {
+  color: var(--foreground) !important;
+}
+
+.form-control {
+  background-color: var(--input-background) !important;
+  border-color: var(--input-border) !important;
+  color: var(--foreground) !important;
+}
