@@ -4,10 +4,10 @@ import { Link } from "react-router";
 import { $Services } from "../../services/services-repository";
 import { $Utilities } from "../../utilities/utilities-repository";
 import formatPrice from "../../utilities/helpers/formatPrice";
-import IsEmptyCart from "../../components/is-empty-cart/isEmptyCart.jsx";
 import IsLoading from "../../components/shared-components/is-loading/IsLoading.jsx";
 import OrderSummary from "../../components/order-summary/OrderSummary.jsx";
 import CartItem from "../../components/cart-item/CartItem.jsx";
+import IsEmptyCart from "../../components/is-empty-cart/IsEmptyCart.jsx";
 
 export default function Cart() {
   const [cart, setCart] = useState(null);
@@ -39,7 +39,8 @@ export default function Cart() {
     console.log("productId", productId);
   }
   
-  const products = cart?.products || [];
+  // const products = cart?.products || [];
+  const products = []
   return (
     <>
       {isLoading ? (
