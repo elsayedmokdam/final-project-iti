@@ -39,8 +39,7 @@ export default function Cart() {
     console.log("productId", productId);
   }
   
-  // const products = cart?.products || [];
-  const products = []
+  const products = cart?.products || [];
   return (
     <>
       {isLoading ? (
